@@ -1,0 +1,28 @@
+<html>
+	<head>
+	     <%= stylesheet_link_tag    "application", :media => "all" %>
+	     <%= javascript_include_tag "application" %>
+	     <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="content">
+
+				<div id="ie6tipcon"></div>
+
+				<div id="u">
+					<a href="#" name="tj_setting">搜索设置</a>|
+					<a href="#" name="tj_login" id="lb" onclick="return false;">登录</a>
+					<a href="#" target="_blank" name="tj_reg" class="reg">注册</a>|
+					<%= link_to "Management", admin_root_path%>
+				</div>
+				<div class="clear"></div>
+				<div id="m">
+					<%= yield %>
+				</div>
+				
+			</div>	
+		</div>
+	</body>
+</html>

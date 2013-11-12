@@ -1,0 +1,29 @@
+<html>
+	<head>
+	     <%= stylesheet_link_tag    "application", :media => "all" %>
+	     <%= javascript_include_tag "application" %>
+	     <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="slider_bar">
+				<h2>Hi there!</h2>
+				<ul>
+					<li><%= link_to "Retrun to Search Page", root_path%></li>					
+				</ul>
+				<div class = "clear"></div>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li><%= link_to "Microblog List", "#"%></li>
+					<li><%= link_to "Get New", admin_cellect_index_path%></li>
+					<li><%= link_to "Users", "#"%></li>
+				</ul>
+			</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+		</div>
+	</body>
+</html>

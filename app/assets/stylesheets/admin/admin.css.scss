@@ -1,0 +1,30 @@
+// Place all the styles related to the admin/admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#slider_bar {
+  border-bottom: 1px solid #EEEEEE;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#777), to(#eee));
+  border-radius: 5px;
+}
+
+#slider_bar h2{
+  float:left;
+  margin-left:30px;
+}
+
+#slider_bar ul {
+  float:right;
+  margin: 20px 30px 10px;
+  list-style-type: none;
+  padding:0px;
+}
+
+#navigation {
+  float: left;
+  margin: 35px 80px 25px 5px;
+}
+
+#content{
+  margin:40px;
+}
